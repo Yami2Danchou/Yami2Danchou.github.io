@@ -1,0 +1,145 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 9999;
+}
+
+.menu-button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.menu-button span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #333;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ff5500;
+}
+
+#menu-toggle:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu-close {
+    color: #ff5500;
+    cursor: pointer;
+}
+.background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(images/bj.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	filter: blur(5px)
+}
+.row{
+	display: flex;
+	height: 70%;
+	align-items: center;
+	padding-top: 70px;
+	font-size: 25px;
+	padding-left: 150px;
+	color: white;
+}
+.col{
+	flex-basis: 20%;
+	background-color: #333;
+	background: rgba(0,0,0,0.5);
+	
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: -800px;
+  border-radius: 30px;
+  transition: transform 0.5s;
+}
+
+.image-container figure {
+  flex-basis: calc(33.33% - 20px);
+  box-sizing: inline-table;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+.col a{
+	color: blue;
+}
+
+.image-container img {
+  width: 60%;
+  height: 400px; /* Adjust the height as per your preference */
+  object-fit: cover;
+  border-radius: 30px;
+  transition: transform 0.5s;
+}
+
+.image-container figcaption {
+  margin-top: 0px;
+  text-align: center;
+  color: white;
+}
+body{
+	background-color: black;
+}
+.image-container img:hover{
+	transform: translateY(-10px)
+}
+#explore{
+	padding: 24px;
+	MARGIN: 0px;
+}
